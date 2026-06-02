@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gustavo HB | Especialista em Conversão (CRO)</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Outfit (Header) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Ícones Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- SEO & Open Graph -->
+  <meta name="description" content="Gustavo Henrique - Especialista em implantação de Landing Pages de alta conversão. Transforme seu tráfego em clientes com páginas que vendem.">
+  <meta property="og:title" content="Gustavo HB | Especialista em Conversão">
+  <meta property="og:description" content="Implantação de Landing Pages de conversão para transformar tráfego em contatos e vendas.">
+  <meta property="og:image" content="https://iadigitall.github.io/porti/capa.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="author" content="Gustavo Henrique">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Gustavo HB | Especialista em Conversão",
+    "image": "https://iadigitall.github.io/porti/capa.jpg",
+    "description": "Especialista em implantação de Landing Pages para conversão de vendas.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Brasília",
+      "addressCountry": "BR"
+    },
+    "url": "https://iadigitall.github.io/porti/"
+  }
+  </script>
+
+  <!-- CSS e Preloads -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Barra de Progresso de Leitura -->
+  <div class="progress-wrap"><div class="progress-bar"></div></div>
+
+  <!-- Camadas de Background -->
+  <div class="bg-layer"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+
+  <!-- MODAL LIGHTBOX DE CERTIFICADOS -->
+  <div id="imageModal" class="modal-overlay" onclick="closeModal()">
+    <button class="modal-close" aria-label="Fechar Modal"><i data-lucide="x"></i></button>
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <img id="modalImg" src="" alt="Certificado Expandido" class="w-full h-auto block">
+    </div>
+  </div>
+
+  <!-- TOPBAR / HEADER -->
+  <header id="topbar" class="topbar">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center text-black"
+             style="background: linear-gradient(135deg, var(--emerald), var(--emerald-light)); box-shadow: 0 0 22px rgba(16, 185, 129, 0.25);">
+          <i data-lucide="zap" class="w-5 h-5"></i>
+        </div>
+        <div class="leading-tight">
+          <div class="font-extrabold tracking-tight text-white">Gustavo HB</div>
+          <div class="text-xs text-gray-400">Especialista em Conversão</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#metodo" class="text-white/70 hover:text-white hover:underline decoration-emerald-light underline-offset-4 transition">Método</a>
+        <a href="#simulador" class="text-white/70 hover:text-white hover:underline decoration-emerald-light underline-offset-4 transition">Simulador ROI</a>
+        <a href="#projetos" class="text-white/70 hover:text-white hover:underline decoration-emerald-light underline-offset-4 transition">Projetos</a>
+        <a href="#certificacoes" class="text-white/70 hover:text-white hover:underline decoration-emerald-light underline-offset-4 transition">Formação</a>
+        <a href="#contato" class="text-white/70 hover:text-white hover:underline decoration-emerald-light underline-offset-4 transition">Contato</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#contato" class="btn btn-primary text-sm py-2 px-4">
+          <i data-lucide="sparkles" class="w-4 h-4 text-black"></i>
+          Vamos conversar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="inicio" class="max-w-7xl mx-auto px-6">
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-16 pb-12 md:pt-28 md:pb-20">
+      <div class="hero-shine"></div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <div class="flex flex-wrap gap-2 mb-6 stagger">
+            <span class="tag reveal" style="--i:0"><i data-lucide="target" class="w-4 h-4"></i> Conversão em 1º Lugar</span>
+            <span class="tag reveal" style="--i:1"><i data-lucide="layout" class="w-4 h-4"></i> Landing pages Premium</span>
+            <span class="tag reveal" style="--i:2"><i data-lucide="trending-up" class="w-4 h-4"></i> Otimização de ROI</span>
+          </div>
+
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight mb-6 reveal" style="--i:1">
+            Você não precisa de <span class="text-white">mais visitas</span>.<br>
+            Precisa de uma página que <span class="highlight">sabe vender</span>.
+          </h1>
+
+          <p class="text-lg md:text-xl leading-relaxed mb-8 text-gray-400 reveal" style="--i:2">
+            Eu implanto landing pages de alta performance projetadas para transformar tráfego em contatos e faturamento.
+            Sem frescura, sem layout bonito que não dá resultado. Páginas feitas para <strong>converter</strong>.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 stagger">
+            <a href="#contato" class="btn btn-primary text-base md:text-lg justify-center reveal" style="--i:0">
+              <i data-lucide="message-circle" class="w-5 h-5 text-black"></i>
+              Quero uma landing que converta
+            </a>
+
+            <a href="#projetos" class="btn btn-ghost text-base md:text-lg justify-center reveal" style="--i:1">
+              <i data-lucide="arrow-down" class="w-5 h-5"></i>
+              Ver portfólio
+            </a>
+          </div>
+
+          <div class="mt-12 grid grid-cols-3 gap-4 stagger">
+            <div class="glass p-4 text-center reveal neon-border" style="--i:0">
+              <div class="text-2xl md:text-3xl font-extrabold highlight">AIDA</div>
+              <div class="text-xs text-gray-400 mt-1">Estrutura de decisão</div>
+            </div>
+            <div class="glass p-4 text-center reveal neon-border" style="--i:1">
+              <div class="text-2xl md:text-3xl font-extrabold highlight">UX</div>
+              <div class="text-xs text-gray-400 mt-1">Clareza e fluxo</div>
+            </div>
+            <div class="glass p-4 text-center reveal neon-border" style="--i:2">
+              <div class="text-2xl md:text-3xl font-extrabold highlight">CRO</div>
+              <div class="text-xs text-gray-400 mt-1">Otimização real</div>
+            </div>
+          </div>
+
+          <div class="mt-10 neon-line reveal" style="--i:3"></div>
+
+          <p class="mt-6 text-sm text-gray-500 reveal" style="--i:4">
+            <strong>Nível de consciência do seu mercado:</strong> seu cliente sabe que precisa vender na internet,
+            mas não sabe <em>o que separa</em> uma página genérica de uma página que realmente converte.
+            Meu trabalho é aplicar psicologia e design focado no seu resultado.
+          </p>
+        </div>
+
+        <!-- Coluna da Foto / Preview -->
+        <div class="reveal" style="transition-delay: .12s">
+          <div class="glass p-2 tilt" data-tilt>
+            <div class="relative rounded-[20px] overflow-hidden border border-white/10 bg-black/40">
+              <div class="absolute inset-0 pointer-events-none"
+                   style="background: radial-gradient(600px 220px at 20% 10%, rgba(16, 185, 129, 0.12), transparent 60%);">
+              </div>
+
+              <!-- Imagem de Perfil -->
+              <div class="aspect-[4/4] flex items-center justify-center bg-gray-900/50">
+                <img src="capa.jpg"
+                     alt="Gustavo Henrique"
+                     class="w-full h-full object-cover tilt-fg"
+                     onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=&quot;w-full h-full flex items-center justify-center p-10 text-center&quot;><div><div class=&quot;w-24 h-24 mx-auto rounded-2xl flex items-center justify-center font-black text-3xl text-black&quot; style=&quot;background:linear-gradient(135deg,var(--emerald),var(--emerald-light)); box-shadow:0 0 30px rgba(16,185,129,.30)&quot;>GH</div><p class=&quot;mt-6 text-sm text-gray-400&quot;>Configure sua foto em <strong>capa.jpg</strong></p></div></div>';"
+                >
+              </div>
+
+              <!-- Informações abaixo da foto -->
+              <div class="p-6 border-t border-white/5 bg-gray-950/60">
+                <div class="flex items-center justify-between gap-4">
+                  <div>
+                    <div class="font-extrabold text-lg text-white">Implantação de Landing Pages</div>
+                    <div class="text-sm text-gray-400">Copywriting + Design + Desenvolvimento</div>
+                  </div>
+                  <div class="hidden sm:flex items-center gap-2">
+                    <span class="tag py-1 px-3 text-xs"><i data-lucide="zap" class="w-3.5 h-3.5"></i> Ágil</span>
+                  </div>
+                </div>
+
+                <div class="mt-5 flex flex-col sm:flex-row gap-3">
+                  <a href="https://wa.me/5561993181791" target="_blank" class="btn btn-whatsapp w-full justify-center">
+                    <i data-lucide="phone" class="w-5 h-5 text-black"></i>
+                    Falar no WhatsApp
+                  </a>
+                  <a href="mailto:cce3005@gmail.com" target="_blank" class="btn btn-ghost w-full justify-center">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    E-mail
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <p class="mt-5 text-xs text-gray-500 text-center">
+            *Um portfólio profissional reposiciona seu valor frente ao cliente em segundos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SEÇÃO: O PROBLEMA REAL -->
+    <section class="py-14 md:py-20">
+      <div class="text-center max-w-3xl mx-auto reveal">
+        <span class="tag mb-4"><i data-lucide="alert-triangle" class="w-4 h-4"></i> O DIAGNÓSTICO</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-5 tracking-tight text-white">
+          A maioria das páginas de vendas falha pelo mesmo erro:
+        </h2>
+        <p class="text-xl md:text-2xl font-bold">
+          são feitas apenas para <span class="highlight">parecer bonitas</span>, não para <span class="highlight">induzir a ação</span>.
+        </p>
+        <p class="mt-6 text-base md:text-lg text-gray-400">
+          Muitos construtores criam páginas bonitas, mas genéricas. Sem direção de leitura, sem provas persuasivas e com um CTA fraco.
+          O tráfego pago chega, se perde e vai embora.
+        </p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-6 stagger">
+        <!-- Card Problema 1 -->
+        <div class="card p-7 reveal neon-border tilt" data-tilt style="--i:0">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center"
+                 style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.15)">
+              <i data-lucide="navigation" class="w-5 h-5 text-emerald-light"></i>
+            </div>
+            <h3 class="font-extrabold text-lg text-white">Sem Fluxo Claro</h3>
+          </div>
+          <p class="text-gray-400 text-sm">
+            Se o visitante não entende em 3 segundos o próximo passo óbvio, ele sai. O CTA vira enfeite na tela.
+          </p>
+        </div>
+
+        <!-- Card Problema 2 -->
+        <div class="card p-7 reveal neon-border tilt" data-tilt style="--i:1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center"
+                 style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.15)">
+              <i data-lucide="shield-alert" class="w-5 h-5 text-emerald-light"></i>
+            </div>
+            <h3 class="font-extrabold text-lg text-white">Falta de Confiança</h3>
+          </div>
+          <p class="text-gray-400 text-sm">
+            Sem elementos de prova social e redução de risco aplicados no local certo, o visitante hesita e desiste da compra.
+          </p>
+        </div>
+
+        <!-- Card Problema 3 -->
+        <div class="card p-7 reveal neon-border tilt" data-tilt style="--i:2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center"
+                 style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.15)">
+              <i data-lucide="message-square-off" class="w-5 h-5 text-emerald-light"></i>
+            </div>
+            <h3 class="font-extrabold text-lg text-white">Copy Sem Persuasão</h3>
+          </div>
+          <p class="text-gray-400 text-sm">
+            Textos meramente informativos não vendem. A escrita precisa se conectar diretamente com as dores reais do cliente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SEÇÃO: O MÉTODO -->
+    <section id="metodo" class="py-14 md:py-20">
+      <div class="glass p-8 md:p-12 reveal">
+        <div class="flex flex-col lg:flex-row items-start justify-between gap-12">
+          <div class="max-w-2xl">
+            <span class="tag mb-4"><i data-lucide="sparkles" class="w-4 h-4"></i> METODOLOGIA</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-5 tracking-tight text-white">
+              AIDA aplicada como um funil focado em conversão
+            </h2>
+            <p class="text-lg text-gray-400 mb-6">
+              Escrevo e desenvolvo para pessoas reais: com comunicação clara, direta e focada em resolver as dúvidas que seu cliente em potencial teria antes de fechar com você.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-4 stagger">
+              <div class="card p-5 neon-border reveal tilt" data-tilt style="--i:0">
+                <div class="font-extrabold highlight mb-1">Atenção</div>
+                <div class="text-sm text-gray-400">Headlines magnéticas que fazem o visitante continuar na página.</div>
+              </div>
+              <div class="card p-5 neon-border reveal tilt" data-tilt style="--i:1">
+                <div class="font-extrabold highlight mb-1">Interesse</div>
+                <div class="text-sm text-gray-400">Identificação clara com os problemas e as necessidades do usuário.</div>
+              </div>
+              <div class="card p-5 neon-border reveal tilt" data-tilt style="--i:2">
+                <div class="font-extrabold highlight mb-1">Desejo</div>
+                <div class="text-sm text-gray-400">Garantias, depoimentos e benefícios apresentados estrategicamente.</div>
+              </div>
+              <div class="card p-5 neon-border reveal tilt" data-tilt style="--i:3">
+                <div class="font-extrabold highlight mb-1">Ação</div>
+                <div class="text-sm text-gray-400">Chamadas para ação (CTA) diretas, visíveis e irresistíveis.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full lg:max-w-sm">
+            <div class="card p-7 neon-border reveal tilt" data-tilt>
+              <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center"
+                     style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.15)">
+                  <i data-lucide="check-circle" class="w-5 h-5 text-emerald-light"></i>
+                </div>
+                <div class="font-extrabold text-lg text-white">Escopo da Entrega</div>
+              </div>
+
+              <ul class="space-y-4 text-sm text-gray-300">
+                <li class="flex gap-3"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-emerald-light flex-shrink-0"></i>Copy persuasiva completa</li>
+                <li class="flex gap-3"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-emerald-light flex-shrink-0"></i>Design Responsivo Premium</li>
+                <li class="flex gap-3"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-emerald-light flex-shrink-0"></i>Codificação limpa & rápida</li>
+                <li class="flex gap-3"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-emerald-light flex-shrink-0"></i>Integração de WhatsApp / CTAs</li>
+                <li class="flex gap-3"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-emerald-light flex-shrink-0"></i>Instalação e publicação da página</li>
+              </ul>
+
+              <div class="mt-8">
+                <a href="#certificacoes" class="btn btn-primary w-full justify-center">
+                  <i data-lucide="award" class="w-5 h-5 text-black"></i>
+                  Ver Certificações
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SEÇÃO: CALCULADORA DE CRO (NOVA SEÇÃO INTERATIVA) -->
+    <section id="simulador" class="py-14 md:py-20 reveal">
+      <div class="glass p-8 md:p-12">
+        <div class="max-w-3xl mx-auto text-center mb-10">
+          <span class="tag mb-4"><i data-lucide="calculator" class="w-4 h-4"></i> CALCULADORA DE IMPACTO</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold mb-4 tracking-tight text-white">Simule o impacto de uma página otimizada</h2>
+          <p class="text-lg text-gray-400">Arraste os sliders abaixo para ver a diferença que uma Landing Page com copy e design focados em conversão faz no seu faturamento.</p>
+        </div>
+        
+        <div class="calc-container">
+          <div class="card p-6 md:p-8">
+            <!-- Tráfego Mensal -->
+            <div class="calc-slider-group">
+              <div class="calc-slider-header">
+                <span class="calc-slider-label">Visitantes Mensais (Tráfego)</span>
+                <span class="calc-slider-value" id="valTraffic">5.000</span>
+              </div>
+              <input type="range" min="500" max="50000" step="500" value="5000" class="calc-slider" id="sliderTraffic">
+            </div>
+            
+            <!-- Taxa de Conversão Atual -->
+            <div class="calc-slider-group">
+              <div class="calc-slider-header">
+                <span class="calc-slider-label">Taxa de Conversão Atual</span>
+                <span class="calc-slider-value" id="valConvBefore">1.0 %</span>
+              </div>
+              <input type="range" min="0.2" max="3" step="0.1" value="1.0" class="calc-slider" id="sliderConvBefore">
+            </div>
+            
+            <!-- Nova Taxa de Conversão (Especialista) -->
+            <div class="calc-slider-group">
+              <div class="calc-slider-header">
+                <span class="calc-slider-label">Taxa de Conversão Otimizada (Comigo)</span>
+                <span class="calc-slider-value" id="valConvAfter">3.5 %</span>
+              </div>
+              <input type="range" min="3" max="10" step="0.5" value="4.0" class="calc-slider" id="sliderConvAfter">
+            </div>
+
+            <!-- Ticket Médio do Produto -->
+            <div class="calc-slider-group">
+              <div class="calc-slider-header">
+                <span class="calc-slider-label">Ticket Médio do seu Produto / Serviço</span>
+                <span class="calc-slider-value" id="valTicket">R$ 500</span>
+              </div>
+              <input type="range" min="50" max="5000" step="50" value="500" class="calc-slider" id="sliderTicket">
+            </div>
+          </div>
+          
+          <div class="calc-result-box">
+            <div>
+              <h3 class="font-extrabold text-lg text-white/95">Conversões Extras</h3>
+              <p class="text-sm text-gray-400">Mais contatos qualificados ou vendas diretas:</p>
+              <div class="calc-result-num" id="resLeads">+150 <span class="text-lg font-normal text-gray-400">leads/mês</span></div>
+              <p class="text-xs text-gray-500" id="resDetails">De 50 leads para 200 leads mensais</p>
+            </div>
+            
+            <div class="mt-8 border-t border-white/5 pt-6">
+              <h4 class="font-bold text-sm text-emerald-light uppercase tracking-wider">Aumento Mensal Estimado</h4>
+              <div class="calc-result-num text-white" id="resRev">R$ 75.000</div>
+              <p class="text-xs text-gray-500">*Cálculo teórico de conversão. Resultados variam conforme nicho e tráfego.</p>
+              
+              <div class="calc-bar-container">
+                <div class="calc-bar-fill-before" id="barBefore"></div>
+                <div class="calc-bar-fill-after" id="barAfter"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SEÇÃO: PORTFÓLIO / PROJETOS -->
+    <section id="projetos" class="py-14 md:py-20">
+      <div class="text-center max-w-3xl mx-auto reveal">
+        <span class="tag mb-4"><i data-lucide="briefcase" class="w-4 h-4"></i> PORTFÓLIO</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-5 tracking-tight text-white">
+          Projetos Implantados
+        </h2>
+        <p class="text-lg text-gray-400">
+          Páginas reais feitas sob medida, focando em usabilidade móvel e persuasão. Clique para conferir.
+        </p>
+        
+        <!-- Filtros de Projetos -->
+        <div class="flex flex-wrap justify-center gap-3 mt-8">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="landing">Landing Pages</button>
+          <button class="filter-btn" data-filter="institucional">Institucionais</button>
+        </div>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger" id="projects-grid">
+        <!-- 1 - Pet Shop (Landing Page) -->
+        <div class="project-item card p-5 reveal neon-border tilt" data-category="landing" data-tilt style="--i:0">
+          <a target="_blank" href="https://iadigitall.github.io/Est-tica-dos-Bichos/" class="block">
+            <div class="port-thumb">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=85&fit=crop" alt="Shopping dos Animais">
+            </div>
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <div>
+                <div class="font-extrabold text-white text-base">Shopping dos Animais</div>
+                <div class="text-xs text-gray-400 mt-0.5">Pet Shop & Clínica Veterinária</div>
+              </div>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-gray-400 hover:text-emerald-light transition flex-shrink-0"></i>
+            </div>
+            <div class="mt-3 text-sm text-gray-400">
+              Página completa com estrutura AIDA, depoimentos reais e agendamento direto pelo WhatsApp.
+            </div>
+          </a>
+        </div>
+
+        <!-- 2 - PrimeCell (Landing Page) -->
+        <div class="project-item card p-5 reveal neon-border tilt" data-category="landing" data-tilt style="--i:1">
+          <a target="_blank" href="https://iadigitall.github.io/primecell/" class="block">
+            <div class="port-thumb">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=600&q=85&fit=crop" alt="PrimeCell DF">
+            </div>
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <div>
+                <div class="font-extrabold text-white text-base">PrimeCell DF</div>
+                <div class="text-xs text-gray-400 mt-0.5">Loja de iPhones & Assistência</div>
+              </div>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-gray-400 hover:text-emerald-light transition flex-shrink-0"></i>
+            </div>
+            <div class="mt-3 text-sm text-gray-400">
+              Landing page comercial com copy focado em credibilidade, prova social e contato direto via WhatsApp.
+            </div>
+          </a>
+        </div>
+
+        <!-- 3 - Eduardo Laquila (Institucional) -->
+        <div class="project-item card p-5 reveal neon-border tilt" data-category="institucional" data-tilt style="--i:2">
+          <a target="_blank" href="https://iadigitall.github.io/eduardolaquila/" class="block">
+            <div class="port-thumb">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=85&fit=crop" alt="Eduardo Laquila">
+            </div>
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <div>
+                <div class="font-extrabold text-white text-base">Mentoria Eduardo Laquila</div>
+                <div class="text-xs text-gray-400 mt-0.5">Mentor de Advogados</div>
+              </div>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-gray-400 hover:text-emerald-light transition flex-shrink-0"></i>
+            </div>
+            <div class="mt-3 text-sm text-gray-400">
+              Página institucional premium com design elegante, reunindo ofertas e infoprodutos do mentor.
+            </div>
+          </a>
+        </div>
+
+        <!-- 4 - SOS Dentista (Landing Page) -->
+        <div class="project-item card p-5 reveal neon-border tilt" data-category="landing" data-tilt style="--i:3">
+          <a target="_blank" href="https://iadigitall.github.io/SOS-Dentista/" class="block">
+            <div class="port-thumb">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=85&fit=crop" alt="SOS Dentista 24 Horas">
+            </div>
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <div>
+                <div class="font-extrabold text-white text-base">SOS Dentista 24h</div>
+                <div class="text-xs text-gray-400 mt-0.5">Clínica Odontológica de Emergência</div>
+              </div>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-gray-400 hover:text-emerald-light transition flex-shrink-0"></i>
+            </div>
+            <div class="mt-3 text-sm text-gray-400">
+              Página voltada para atendimento rápido e emergencial, otimizada para anúncios locais no Google.
+            </div>
+          </a>
+        </div>
+
+        <!-- 5 - GET Apple (Landing Page) -->
+        <div class="project-item card p-5 reveal neon-border tilt" data-category="landing" data-tilt style="--i:4">
+          <a target="_blank" href="https://iadigitall.github.io/get_apple/" class="block">
+            <div class="port-thumb">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&q=85&fit=crop" alt="GET Apple Brasília">
+            </div>
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <div>
+                <div class="font-extrabold text-white text-base">GET Apple Brasília</div>
+                <div class="text-xs text-gray-400 mt-0.5">Loja Apple & Assistência Técnica</div>
+              </div>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-gray-400 hover:text-emerald-light transition flex-shrink-0"></i>
+            </div>
+            <div class="mt-3 text-sm text-gray-400">
+              Página de conversão focada em venda de aparelhos seminovos e serviços de manutenção rápidos.
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SEÇÃO: HABILIDADES E CERTIFICAÇÕES -->
+    <section id="certificacoes" class="py-14 md:py-20">
+      <div class="text-center max-w-3xl mx-auto reveal">
+        <span class="tag mb-4"><i data-lucide="award" class="w-4 h-4"></i> FORMAÇÃO TÉCNICA</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-5 tracking-tight text-white">
+          Especializações & Certificações
+        </h2>
+        <p class="text-lg text-gray-400">
+          Minha base técnica e de processos para apoiar decisões estratégicas e estruturais de tecnologia. Clique para ver.
+        </p>
+      </div>
+
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger">
+        <!-- Certificado 1 -->
+        <div class="card p-5 reveal neon-border tilt cursor-pointer" data-tilt style="--i:0" onclick="openModal('certi1.png')">
+          <div class="port-thumb mb-4">
+            <img loading="lazy" src="certi1.png" alt="Excel Básico ao Intermediário">
+          </div>
+          <div class="font-extrabold text-lg mb-1 text-white">Excel</div>
+          <div class="text-sm highlight font-bold mb-2">Básico ao Intermediário</div>
+          <p class="text-xs text-gray-400">Análise de dados de tráfego e métricas para decisões orientadas em conversão.</p>
+        </div>
+
+        <!-- Certificado 2 -->
+        <div class="card p-5 reveal neon-border tilt cursor-pointer" data-tilt style="--i:1" onclick="openModal('certi2.png')">
+          <div class="port-thumb mb-4">
+            <img loading="lazy" src="certi2.png" alt="Inteligência Artificial">
+          </div>
+          <div class="font-extrabold text-lg mb-1 text-white">Inteligência Artificial</div>
+          <div class="text-sm highlight font-bold mb-2">Especialista</div>
+          <p class="text-xs text-gray-400">Criação de prompts, automatização e fluxos operacionais com IA generativa.</p>
+        </div>
+
+        <!-- Certificado 3 -->
+        <div class="card p-5 reveal neon-border tilt cursor-pointer" data-tilt style="--i:2" onclick="openModal('certi3.png')">
+          <div class="port-thumb mb-4">
+            <img loading="lazy" src="certi3.png" alt="Cisco CCNA 2.1">
+          </div>
+          <div class="font-extrabold text-lg mb-1 text-white">Cisco CCNA 2.1</div>
+          <div class="text-sm highlight font-bold mb-2">Redes de Computadores</div>
+          <p class="text-xs text-gray-400">Infraestrutura, rotas e conceitos de rede essenciais para servidores e deploys.</p>
+        </div>
+
+        <!-- Certificado 4 -->
+        <div class="card p-5 reveal neon-border tilt cursor-pointer" data-tilt style="--i:3" onclick="openModal('certi4.png')">
+          <div class="port-thumb mb-4">
+            <img loading="lazy" src="certi4.png" alt="Microsoft 365">
+          </div>
+          <div class="font-extrabold text-lg mb-1 text-white">Microsoft 365</div>
+          <div class="text-sm highlight font-bold mb-2">Administração</div>
+          <p class="text-xs text-gray-400">Gestão operacional de ferramentas e infraestrutura organizacional moderna.</p>
+        </div>
+      </div>
+
+      <!-- Hard Skills / Ferramentas -->
+      <div class="mt-16 reveal">
+        <h3 class="text-center font-extrabold text-xl mb-10 tracking-tight text-white">Ferramentas & Competências</h3>
+        <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+          <div class="skill-badge"><i data-lucide="code-2" class="w-5 h-5 text-emerald-light"></i> HTML + CSS + JS</div>
+          <div class="skill-badge"><i data-lucide="layout-template" class="w-5 h-5 text-emerald-light"></i> Estrutura AIDA</div>
+          <div class="skill-badge"><i data-lucide="pen-tool" class="w-5 h-5 text-emerald-light"></i> Copywriting Comercial</div>
+          <div class="skill-badge"><i data-lucide="bar-chart-3" class="w-5 h-5 text-emerald-light"></i> CRO & Teste de Página</div>
+          <div class="skill-badge"><i data-lucide="github" class="w-5 h-5 text-emerald-light"></i> Git & GitHub Pages</div>
+          <div class="skill-badge"><i data-lucide="bot" class="w-5 h-5 text-emerald-light"></i> Inteligência Artificial</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SEÇÃO: SOBRE MIM (AUTORIDADE) -->
+    <section class="py-14 md:py-20">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <span class="tag mb-4"><i data-lucide="user" class="w-4 h-4"></i> PERFIL</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold mb-5 tracking-tight text-white">
+            Quem está por trás do código e da copy
+          </h2>
+
+          <p class="text-lg text-gray-400 mb-4">
+            Olá, sou <strong>Gustavo Henrique</strong>. Trabalho integrando design responsivo, redação persuasiva e programação limpa para entregar páginas completas que ajudam empresas a venderem mais.
+          </p>
+
+          <p class="text-lg text-gray-400">
+            Acredito que na internet o tempo é o recurso mais caro. Minhas páginas são leves, rápidas e com caminhos de clique diretos. Sem rodeios e sem distrações.
+          </p>
+
+          <!-- Baixar CV -->
+          <div class="mt-8 flex flex-wrap gap-4 items-center">
+            <a href="Curriculo_Gustavo_Henrique_ (1).pdf" download class="btn btn-ghost text-sm">
+                <i data-lucide="download" class="w-4 h-4"></i>
+                Baixar Currículo (PDF)
+            </a>
+            <div class="flex flex-wrap gap-2">
+                <span class="tag py-1 px-3 text-xs">Copywriting</span>
+                <span class="tag py-1 px-3 text-xs">UX/UI</span>
+                <span class="tag py-1 px-3 text-xs">Analytics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal" style="transition-delay: .10s">
+          <div class="card p-8 neon-border tilt" data-tilt>
+            <div class="font-extrabold text-xl mb-5 text-white">Fluxo de Trabalho Simplificado</div>
+            <ol class="space-y-4 text-sm text-gray-300">
+              <li class="flex gap-3"><span class="highlight font-extrabold">1.</span> Alinhamento rápido de oferta e público-alvo</li>
+              <li class="flex gap-3"><span class="highlight font-extrabold">2.</span> Criação de copy e roteiro estruturado AIDA</li>
+              <li class="flex gap-3"><span class="highlight font-extrabold">3.</span> Desenvolvimento focado em carregamento mobile rápido</li>
+              <li class="flex gap-3"><span class="highlight font-extrabold">4.</span> Instalação de pixels de rastreamento e entrega final</li>
+            </ol>
+
+            <div class="mt-6 p-4 rounded-xl bg-emerald-light/5 border border-emerald-light/10">
+              <div class="font-extrabold text-emerald-light mb-1">O objetivo é clareza máxima.</div>
+              <div class="text-xs text-gray-400">
+                Uma página cheia de efeitos confusos gera atrito. Meu foco é remover o atrito e conduzir até a conversão.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SEÇÃO: CONTATO -->
+    <section id="contato" class="py-14 md:py-20">
+      <div class="glass p-8 md:p-12 text-center reveal">
+        <span class="tag mb-4"><i data-lucide="rocket" class="w-4 h-4"></i> VAMOS IMPLANTAR?</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-5 tracking-tight text-white">
+          Quer que eu crie sua landing de conversão?
+        </h2>
+        <p class="text-lg max-w-2xl mx-auto mb-8 text-gray-400">
+          Me diga qual é seu produto ou serviço e qual seu público-alvo. Eu te apresento a melhor estrutura para a sua conversão.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center stagger">
+          <a href="https://wa.me/5561993181791" target="_blank" class="btn btn-primary text-lg justify-center reveal" style="--i:0">
+            <i data-lucide="message-circle" class="w-5 h-5 text-black"></i>
+            Conversar no WhatsApp
+          </a>
+          <a href="mailto:cce3005@gmail.com" target="_blank" class="btn btn-ghost text-lg justify-center reveal" style="--i:1">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+            Enviar E-mail
+          </a>
+          <a href="https://www.linkedin.com/in/gustavo-hb-9a81762b8/" target="_blank" class="btn btn-ghost text-lg justify-center reveal" style="--i:2">
+            <i data-lucide="linkedin" class="w-5 h-5"></i>
+            LinkedIn
+          </a>
+        </div>
+
+        <div class="mt-10 neon-line"></div>
+
+        <p class="mt-6 text-sm text-gray-500">
+          Retorno ágil • Escopo definido • Atendimento direto e objetivo
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 border-t border-white/5 text-center">
+      <div class="text-sm text-gray-500">© 2026 • Gustavo HB • Todos os direitos reservados.</div>
+    </footer>
+
+  </main>
+
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button id="toTop" class="to-top btn btn-ghost" aria-label="Voltar ao topo">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    Voltar ao topo
+  </button>
+
+  <!-- FLOATING CTA (MOBILE & DESKTOP FOOTER) -->
+  <div class="floating-cta">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="text-sm text-left">
+        <div class="font-extrabold text-white">Pronto para aumentar suas conversões?</div>
+        <div class="text-gray-400">Clique e receba uma análise do seu nicho sem compromisso.</div>
+      </div>
+      <a href="https://wa.me/5561993181791" target="_blank" class="btn btn-primary w-full sm:w-auto justify-center py-2 px-6">
+        <i data-lucide="message-circle" class="w-5 h-5 text-black"></i>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
