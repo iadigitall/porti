@@ -80,7 +80,6 @@
 
       <nav class="hidden md:flex items-center gap-8 text-sm">
         <a href="#metodo" class="text-white/70 hover:text-white hover:underline decoration-emerald-light underline-offset-4 transition">Método</a>
-        <a href="#simulador" class="text-white/70 hover:text-white hover:underline decoration-emerald-light underline-offset-4 transition">Simulador ROI</a>
         <a href="#projetos" class="text-white/70 hover:text-white hover:underline decoration-emerald-light underline-offset-4 transition">Projetos</a>
         <a href="#certificacoes" class="text-white/70 hover:text-white hover:underline decoration-emerald-light underline-offset-4 transition">Formação</a>
         <a href="#contato" class="text-white/70 hover:text-white hover:underline decoration-emerald-light underline-offset-4 transition">Contato</a>
@@ -328,79 +327,6 @@
                   <i data-lucide="award" class="w-5 h-5 text-black"></i>
                   Ver Certificações
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- SEÇÃO: CALCULADORA DE CRO (NOVA SEÇÃO INTERATIVA) -->
-    <section id="simulador" class="py-14 md:py-20 reveal">
-      <div class="glass p-8 md:p-12">
-        <div class="max-w-3xl mx-auto text-center mb-10">
-          <span class="tag mb-4"><i data-lucide="calculator" class="w-4 h-4"></i> CALCULADORA DE IMPACTO</span>
-          <h2 class="text-3xl md:text-4xl font-extrabold mb-4 tracking-tight text-white">Simule o impacto de uma página otimizada</h2>
-          <p class="text-lg text-gray-400">Arraste os sliders abaixo para ver a diferença que uma Landing Page com copy e design focados em conversão faz no seu faturamento.</p>
-        </div>
-        
-        <div class="calc-container">
-          <div class="card p-6 md:p-8">
-            <!-- Tráfego Mensal -->
-            <div class="calc-slider-group">
-              <div class="calc-slider-header">
-                <span class="calc-slider-label">Visitantes Mensais (Tráfego)</span>
-                <span class="calc-slider-value" id="valTraffic">5.000</span>
-              </div>
-              <input type="range" min="500" max="50000" step="500" value="5000" class="calc-slider" id="sliderTraffic">
-            </div>
-            
-            <!-- Taxa de Conversão Atual -->
-            <div class="calc-slider-group">
-              <div class="calc-slider-header">
-                <span class="calc-slider-label">Taxa de Conversão Atual</span>
-                <span class="calc-slider-value" id="valConvBefore">1.0 %</span>
-              </div>
-              <input type="range" min="0.2" max="3" step="0.1" value="1.0" class="calc-slider" id="sliderConvBefore">
-            </div>
-            
-            <!-- Nova Taxa de Conversão (Especialista) -->
-            <div class="calc-slider-group">
-              <div class="calc-slider-header">
-                <span class="calc-slider-label">Taxa de Conversão Otimizada (Comigo)</span>
-                <span class="calc-slider-value" id="valConvAfter">3.5 %</span>
-              </div>
-              <input type="range" min="3" max="10" step="0.5" value="4.0" class="calc-slider" id="sliderConvAfter">
-            </div>
-
-            <!-- Ticket Médio do Produto -->
-            <div class="calc-slider-group">
-              <div class="calc-slider-header">
-                <span class="calc-slider-label">Ticket Médio do seu Produto / Serviço</span>
-                <span class="calc-slider-value" id="valTicket">R$ 500</span>
-              </div>
-              <input type="range" min="50" max="5000" step="50" value="500" class="calc-slider" id="sliderTicket">
-            </div>
-          </div>
-          
-          <div class="calc-result-box">
-            <div>
-              <h3 class="font-extrabold text-lg text-white/95">Conversões Extras</h3>
-              <p class="text-sm text-gray-400">Mais contatos qualificados ou vendas diretas:</p>
-              <div class="calc-result-num" id="resLeads">+150 <span class="text-lg font-normal text-gray-400">leads/mês</span></div>
-              <p class="text-xs text-gray-500" id="resDetails">De 50 leads para 200 leads mensais</p>
-            </div>
-            
-            <div class="mt-8 border-t border-white/5 pt-6">
-              <h4 class="font-bold text-sm text-emerald-light uppercase tracking-wider">Aumento Mensal Estimado</h4>
-              <div class="calc-result-num text-white" id="resRev">R$ 75.000</div>
-              <p class="text-xs text-gray-500">*Cálculo teórico de conversão. Resultados variam conforme nicho e tráfego.</p>
-              
-              <div class="calc-bar-container">
-                <div class="calc-bar-fill-before" id="barBefore"></div>
-                <div class="calc-bar-fill-after" id="barAfter"></div>
               </div>
             </div>
           </div>

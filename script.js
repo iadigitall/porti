@@ -139,67 +139,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ===== Interactive CRO Calculator =====
-  const sliderTraffic = document.getElementById("sliderTraffic");
-  const sliderConvBefore = document.getElementById("sliderConvBefore");
-  const sliderConvAfter = document.getElementById("sliderConvAfter");
-  const sliderTicket = document.getElementById("sliderTicket");
-
-  const valTraffic = document.getElementById("valTraffic");
-  const valConvBefore = document.getElementById("valConvBefore");
-  const valConvAfter = document.getElementById("valConvAfter");
-  const valTicket = document.getElementById("valTicket");
-
-  const resLeads = document.getElementById("resLeads");
-  const resDetails = document.getElementById("resDetails");
-  const resRev = document.getElementById("resRev");
-
-  const barBefore = document.getElementById("barBefore");
-  const barAfter = document.getElementById("barAfter");
-
-  const formatNumber = (num) => {
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-  };
-
-  const calculateCRO = () => {
-    const traffic = parseInt(sliderTraffic.value);
-    const convBefore = parseFloat(sliderConvBefore.value);
-    const convAfter = parseFloat(sliderConvAfter.value);
-    const ticket = parseInt(sliderTicket.value);
-
-    // Update Slider Headers
-    valTraffic.textContent = formatNumber(traffic);
-    valConvBefore.textContent = convBefore.toFixed(1) + " %";
-    valConvAfter.textContent = convAfter.toFixed(1) + " %";
-    valTicket.textContent = "R$ " + formatNumber(ticket);
-
-    // Run Calculations
-    const leadsBefore = Math.round(traffic * (convBefore / 100));
-    const leadsAfter = Math.round(traffic * (convAfter / 100));
-    const leadsDiff = Math.max(0, leadsAfter - leadsBefore);
-
-    const revenueBefore = leadsBefore * ticket;
-    const revenueAfter = leadsAfter * ticket;
-    const revenueDiff = Math.max(0, revenueAfter - revenueBefore);
-
-    // Update Text results
-    resLeads.innerHTML = `+${formatNumber(leadsDiff)} <span class="text-lg font-normal text-gray-400">leads/mês</span>`;
-    resDetails.textContent = `De ${formatNumber(leadsBefore)} leads para ${formatNumber(leadsAfter)} leads mensais`;
-    resRev.textContent = "R$ " + formatNumber(revenueDiff);
-
-    // Update Bar Visualizer
-    const ratio = Math.max(2, Math.min(100, (leadsBefore / (leadsAfter || 1)) * 100));
-    barBefore.style.width = ratio.toFixed(1) + "%";
-    barAfter.style.width = "100%";
-  };
-
-  if (sliderTraffic) {
-    [sliderTraffic, sliderConvBefore, sliderConvAfter, sliderTicket].forEach(slider => {
-      slider.addEventListener("input", calculateCRO);
-    });
-    // Init calculator
-    calculateCRO();
-  }
 
   // ===== Projects Category Filtering =====
   const filterButtons = document.querySelectorAll(".filter-btn");
