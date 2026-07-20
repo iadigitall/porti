@@ -236,6 +236,14 @@ h1, h2, h3, h4, h5, h6 {
   filter: drop-shadow(0 2px 8px rgba(16, 185, 129, 0.15));
 }
 
+/* ===== Color utilities (Tailwind's CDN build has no "emerald-light" token,
+   so these are defined here instead of relying on arbitrary utility classes) ===== */
+.text-emerald-light { color: var(--emerald-light); }
+.decoration-emerald-light { text-decoration-color: var(--emerald-light); }
+.bg-emerald-light\/5 { background-color: rgba(52, 211, 153, 0.05); }
+.border-emerald-light\/10 { border-color: rgba(52, 211, 153, 0.10); }
+.hover\:text-emerald-light:hover { color: var(--emerald-light); }
+
 /* ===== Cinematographic Reveal ===== */
 .reveal {
   opacity: 0;
@@ -492,143 +500,6 @@ h1, h2, h3, h4, h5, h6 {
   border-color: rgba(16, 185, 129, 0.2);
   color: var(--emerald-light);
   transform: translateY(-2px);
-}
-
-/* ===== CRO Calculator Styling ===== */
-.calc-container {
-  display: grid;
-  grid-template-cols: 1fr;
-  gap: 24px;
-}
-
-@media (min-width: 768px) {
-  .calc-container {
-    grid-template-cols: 1.2fr 0.8fr;
-  }
-}
-
-.calc-slider-group {
-  margin-bottom: 24px;
-}
-
-.calc-slider-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-  font-size: 0.95rem;
-}
-
-.calc-slider-label {
-  color: var(--text-muted);
-}
-
-.calc-slider-value {
-  font-weight: 700;
-  color: var(--emerald-light);
-}
-
-.calc-slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 6px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  outline: none;
-  transition: background 0.3s;
-}
-
-.calc-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: var(--emerald-light);
-  cursor: pointer;
-  box-shadow: 0 0 10px var(--emerald-glow);
-  transition: transform 0.1s;
-}
-
-.calc-slider::-webkit-slider-thumb:hover {
-  transform: scale(1.25);
-}
-
-.calc-slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: var(--emerald-light);
-  cursor: pointer;
-  border: none;
-  box-shadow: 0 0 10px var(--emerald-glow);
-  transition: transform 0.1s;
-}
-
-.calc-slider::-moz-range-thumb:hover {
-  transform: scale(1.25);
-}
-
-.calc-result-box {
-  background: rgba(16, 185, 129, 0.02);
-  border: 1px solid rgba(16, 185, 129, 0.1);
-  border-radius: var(--r);
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  overflow: hidden;
-}
-
-.calc-result-box::before {
-  content: "";
-  position: absolute;
-  top: -100px;
-  right: -100px;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
-  pointer-events: none;
-}
-
-.calc-result-num {
-  font-size: 3rem;
-  font-weight: 900;
-  line-height: 1;
-  color: var(--emerald-light);
-  font-family: 'Outfit', sans-serif;
-  margin: 12px 0;
-  letter-spacing: -0.03em;
-}
-
-.calc-bar-container {
-  height: 8px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 999px;
-  margin-top: 14px;
-  overflow: hidden;
-  position: relative;
-}
-
-.calc-bar-fill-before {
-  height: 100%;
-  width: 0%;
-  background: rgba(255, 255, 255, 0.2);
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: width 0.3s ease;
-}
-
-.calc-bar-fill-after {
-  height: 100%;
-  width: 0%;
-  background: linear-gradient(90deg, var(--emerald-dark), var(--emerald-light));
-  box-shadow: 0 0 10px var(--emerald-glow);
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: width 0.3s ease;
 }
 
 /* ===== Project Filters ===== */
